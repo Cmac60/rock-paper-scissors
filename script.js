@@ -11,4 +11,19 @@ function getComputerChoice() {
         return choice;
     }
 }
+
+function getHumanChoice() {
+    let result = prompt("rock, paper or scissors?: ");
+    if (result === "rock") {
+        return "rock";
+    } else if (result === "paper") {
+        return "paper";
+    } else if (result === "scissors") {
+        return "scissors";
+    } else {
+        return "please input valid choice"
+    }
+}
+console.log(getHumanChoice());
+
 console.log(getComputerChoice());
